@@ -13981,9 +13981,10 @@ class VariantRedirectManager {
                 }
                 
                 // Add a small delay to show loading state, then redirect
-                setTimeout(() => {
+                
                     window.location.href = redirectUrl;
-                }, 300);
+                    
+                 
             } else {
                 this.showErrorMessage('Unable to process checkout. Please try again.');
             }
