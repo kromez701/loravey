@@ -13866,31 +13866,35 @@ class VariantRedirectManager {
         // Base URLs for each pack type
         this.variantUrls = {
             '15f8038a-5ca2-4b38-92b0-3ef3762eb06f': {
-                base: 'https://example.com/2-pack-checkout', // 2 PACK (no color selection)
-                colors: null
+                base: 'https://n2kzpa-uw.myshopify.com/cart', // 2 PACK (no color selection)
+                colors: {
+                    'Gray': 'https://n2kzpa-uw.myshopify.com/cart/52255557747021:1',
+                    'Blue': 'https://n2kzpa-uw.myshopify.com/cart/52255559549261:1', 
+                    'Black': 'https://n2kzpa-uw.myshopify.com/cart/52255559582029:1'
+                }
             },
             'e845aec7-6c4b-462c-9ef8-49d4da20667e': {
-                base: 'https://example.com/4-pack-checkout', // 4 PACK
+                base: 'https://n2kzpa-uw.myshopify.com/cart', // 4 PACK
                 colors: {
-                    'Gray': 'https://example.com/4-pack-checkout?color=gray',
-                    'Blue': 'https://example.com/4-pack-checkout?color=blue', 
-                    'Black': 'https://example.com/4-pack-checkout?color=black'
+                    'Gray': 'https://n2kzpa-uw.myshopify.com/cart/52255557779789:1',
+                    'Blue': 'https://n2kzpa-uw.myshopify.com/cart/52255559614797:1', 
+                    'Black': 'https://n2kzpa-uw.myshopify.com/cart/52255559647565:1'
                 }
             },
             '37ee3985-9d92-4136-9d00-ad24a58e11c6': {
-                base: 'https://example.com/6-pack-checkout', // 6 PACK
+                base: 'https://n2kzpa-uw.myshopify.com/cart', // 6 PACK
                 colors: {
-                    'Gray': 'https://example.com/6-pack-checkout?color=gray',
-                    'Blue': 'https://example.com/6-pack-checkout?color=blue',
-                    'Black': 'https://example.com/6-pack-checkout?color=black'
+                    'Gray': 'https://n2kzpa-uw.myshopify.com/cart/52255557812557:1',
+                    'Blue': 'https://n2kzpa-uw.myshopify.com/cart/52255559680333:1',
+                    'Black': 'https://n2kzpa-uw.myshopify.com/cart/52255559713101:1'
                 }
             }
         };
         
         this.priceMapping = {
-            '15f8038a-5ca2-4b38-92b0-3ef3762eb06f': '£29.95', // 2 PACK
-            'e845aec7-6c4b-462c-9ef8-49d4da20667e': '£39.95', // 4 PACK
-            '37ee3985-9d92-4136-9d00-ad24a58e11c6': '£49.99'  // 6 PACK
+            '15f8038a-5ca2-4b38-92b0-3ef3762eb06f': '£24.99', // 2 PACK
+            'e845aec7-6c4b-462c-9ef8-49d4da20667e': '£29.99', // 4 PACK
+            '37ee3985-9d92-4136-9d00-ad24a58e11c6': '£39.95'  // 6 PACK
         };
         
         this.init();
