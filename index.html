@@ -13982,7 +13982,8 @@ class VariantRedirectManager {
                 
                 // Add a small delay to show loading state, then redirect
                 
-                    window.location.href = redirectUrl;
+                    // window.location.href = redirectUrl;
+                    window.open(redirectUrl, '_blank')
                     
                  
             } else {
